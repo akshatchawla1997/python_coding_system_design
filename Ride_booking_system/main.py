@@ -7,11 +7,15 @@ from Ride_booking_system.payments.upi import UpiPayment
 
 from rides.ride_manager import RideManager
 
-
 # Create Rider
 rider = Rider(
     email="rider@gmail.com",
     password="1234"
+)
+
+rider = Rider(
+    email="rider1@gmail.com",
+    password="1242"
 )
 
 # Create Driver
