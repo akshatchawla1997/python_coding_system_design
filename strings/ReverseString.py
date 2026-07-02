@@ -5,8 +5,8 @@ class String:
     def reverse(self):
         return self.string[::-1]
 
-s = String("Hello, World!")
-print(s.reverse())  # Output: !dlroW ,olleH
+# s = String("Hello, World!")
+# print(s.reverse())  # Output: !dlroW ,olleH
 
-s = String("Akshat")
-print(s.reverse())  # Output: tahxkA
+s = String("A man, a plan, a canal: Panama")
+print(s.reverse())  # Output: amanaP :lanac a ,nalp a ,nam A
