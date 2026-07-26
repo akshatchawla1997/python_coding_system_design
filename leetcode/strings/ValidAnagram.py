@@ -15,6 +15,8 @@ class ValidAnagram:
             return False
         count_s = defaultdict(int)
         count_t = defaultdict(int)
+        print(count_s)
+        print(count_t)
 
         for char_s, char_t in zip(self.s, self.t):
             count_s[char_s] += 1
@@ -25,5 +27,5 @@ class ValidAnagram:
         else:
             return False
 
-va = ValidAnagram("anagrm", "nagaram")
+va = ValidAnagram("anagram", "nagaram")
 print(va.is_anagram())
