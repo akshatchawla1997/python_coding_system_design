@@ -1,13 +1,15 @@
 class Solution:
     def max_product(self, n):
-        q = n
-        product = 1
-        while(q > 0):
-            r = q % 10
-            q = q//10
-            product *= r
-        print(product)
-        return product
+
+        product, self.max_prod = 1, 1
+        digits = [int(digit) for digit in str(n)]
+        digits.sort()
+        print(digits)
+        for i in range(len(digits)-1):
+            product = digits[i] * digits[i+1]
+            if self.max_prod < product:
+                self.max_prod = product
+        print(self.max_prod)
 
 
 s = Solution()
