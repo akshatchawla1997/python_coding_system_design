@@ -3,7 +3,7 @@ def powerOf4(n:int)->bool:
         return False
     if n == 1:
         return True
-    if n%4 != 0:
+    if n%4 != 0: 
         return False
     return powerOf4(n // 4)
 
